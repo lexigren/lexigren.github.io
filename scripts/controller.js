@@ -282,8 +282,21 @@ function App(){
         }
     }
 
+    this.screenLocked=0;
     //Navigating
+    this.pageUp=function(){
+        if(this.screenLocked) return;
+        this.navigate(activePage-1);
+    }
+    this.pageDown=function(){
+        if(this.screenLocked) return;
+        this.navigate(activePage+1);
+    }
+
     this.navigate=function(pageId, notFromMenu){
+
+        if(pageId>pagesArray.length-1 || pageId<0) return;
+
         console.log("going to  page"+pageId);
 
         var nextPage=pagesArray[pageId];
@@ -291,6 +304,8 @@ function App(){
         // give page time to load, if needed
         var loadingTime=nextPage.getLoadingTime();
         if(loadingTime>0){
+
+            this.screenLocked=1;
 
             var splashScreen=Service.getElement("div","splashScreen","splashScreen");
             Service.setDimensions(splashScreen,me.getWidth(),me.getHeight());
@@ -303,6 +318,7 @@ function App(){
                 splashScreen.innerHTML=""+perc+"%";
                 perc++;
                 if(perc>=100) {
+                    me.screenLocked=0;
                     clearInterval(loadingProcess);
                     currentScreen.removeChild(splashScreen);
                     me.navigate(pageId);
@@ -410,4 +426,20 @@ function App(){
 function main(){
     app = new App();
     window.addEventListener("resize",app.paint);
+
+
+    function MouseWheelHandler(e){
+        var e = window.event || e; // old IE support
+        var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+
+        console.log("wheel: "+delta);
+        if(delta>0){
+            app.pageUp();
+        }else{
+            app.pageDown();
+        }
+    }
+
+    document.addEventListener("mousewheel", MouseWheelHandler, false);
+    document.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
 }
