@@ -129,16 +129,6 @@ function ContactPage(app){
 
         form.adjust(width,height);
 
-//        var buttonWidth=width*Settings.button.width;
-//        var buttonHeight=height*Settings.button.height;
-
-//        var buttonTop=textTop+textHeight+10;
-//        var buttonLeft=(width-buttonWidth)/2;
-
-//        Service.setDimensions(portfolioButton,buttonWidth,buttonHeight);
-//        Service.setIndent(portfolioButton,buttonLeft,buttonTop);
-
-//        portfolioButton.style.fontSize=""+(width+height)/2*Settings.button.font+"px";
     }
 
     this.getPage=function(){
@@ -168,13 +158,4 @@ function ContactPage(app){
 
     body.appendChild(form.get());
 
-//    var portfolioButton=Service.getElement("div","portfolioButtonAbout","applicationButton");
-//    portfolioButton.innerHTML="PORTFOLIO";
-//    portfolioButton.pageId=1;
-//
-//    portfolioButton.addEventListener("click",function(){
-//        app.navigate(1,1);
-//    });
-//
-//    body.appendChild(portfolioButton);
 }
