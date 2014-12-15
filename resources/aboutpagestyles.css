@@ -1,0 +1,70 @@
+.aboutpage{
+    position: absolute;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+        ),
+        url("img/beard.jpg");
+    background-size: 100%;
+}
+
+.abouttitle{
+    position: absolute;
+    line-height: 2;
+    padding: 10px;
+    background: #62d6ff;
+    color:white;
+    text-align: center;
+}
+
+.infoblock{
+    position: absolute;
+
+}
+
+.infoHeader, .infoText{
+    overflow: hidden;
+
+    position: absolute;
+    color: white;
+}
+
+.separator{
+    position: absolute;
+
+    color: white;
+
+    background: white;
+}
+
+.progressbar, .progressbarLayer{
+    line-height: 2;
+    text-indent: 1em;
+    border: 1px solid white;
+    position: absolute;
+    text-align: right;
+
+    color:white;
+}
+.progressbarLayer{
+    border: 0px solid white;
+}
+
+.progressMeter{
+
+    margin-top: -2px;
+    margin-left: -2px;
+    /*margin: -1px;*/
+
+    text-align: left;
+    color:white;
+    height: 110%;
+    background: repeating-linear-gradient(
+        -45deg,
+        #62d6ff,
+        #62d6ff 10px,
+        #4dabff 10px,
+        #4dabff 20px
+    );
+}

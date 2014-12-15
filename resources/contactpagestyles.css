@@ -1,0 +1,47 @@
+.contactpage{
+    position: absolute;
+}
+
+.map{
+    position: absolute;
+    background-color: #CCC;
+}
+
+.contacttitle{
+    position: absolute;
+    line-height: 2;
+    padding: 10px;
+    background: #62d6ff;
+    color:white;
+    text-align: center;
+}
+
+.contactinput {
+
+    position: absolute;
+
+    border-bottom: solid 2px #8e8e8e;
+    border-left: solid 1px #d1d1d1;
+    border-right: solid 1px #d1d1d1;
+    border-top: solid 1px #e4e4e4;
+}
+
+.contactinput:focus {
+    border-color: #62d6ff;
+    border-style: solid;
+    border-width: 2px;
+    outline: 0;
+}
+
+.formDiv{
+    position: absolute;
+    padding: 10px;
+    background-color:rgba(0,0,0,0.3);
+}
+
+.formHeader{
+    overflow: hidden;
+
+    position: absolute;
+    color: white;
+}

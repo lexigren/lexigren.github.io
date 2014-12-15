@@ -1,0 +1,116 @@
+.portfolioPage{
+    position: absolute;
+
+    background: #000000;
+}
+
+.picture, .picturePostView{
+    position: absolute;
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+
+.infoLayer{
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #62d6ff;
+    opacity: 0;
+}
+
+.infoLayer:hover{
+    opacity: 0.9;
+}
+
+.picTitle, .picText{
+    padding: 10px;
+    color: white;
+}
+
+.picText{
+    text-align: justify;
+}
+
+.portfolioPageHolder{
+    position: absolute;
+}
+
+.portfolioControls{
+    position: absolute;
+    text-align: center;
+}
+
+.portfolioButton, .sidePaneCloseButton{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    cursor: default;
+
+
+    position: absolute;
+    border-radius: 2px;
+    border: 1px solid;
+    border-color: white;
+    line-height: 2.5;
+
+    color: white;
+}
+.portfolioButton:hover{
+    color: #62d6ff;
+    background: white;
+}
+
+.portfolioTitle{
+    padding: 10px;
+    /*position: absolute;*/
+    color: white;
+}
+
+.picturePostPane{
+    position: absolute;
+    background: #62d6ff;
+    opacity: 0.9;
+
+    -webkit-transform: skewX(-5deg);
+    -moz-transform: skewX(-5deg);
+    -o-transform: skewX(-5deg);
+}
+
+.sidePaneInfoLayer, .sidePaneSketchLayer{
+    /*border: 1px solid;*/
+    position: absolute;
+
+    overflow: hidden;
+}
+
+
+.sidePaneCloseButton{
+    border: 0px solid;
+    position: absolute;
+    color: white;
+    -webkit-transform: skewX(5deg);
+    -moz-transform: skewX(5deg);
+    -o-transform: skewX(5deg);
+}
+.sidePaneCloseButton:hover{
+    color: black;
+}
+
+
+.sketch{
+    border: 1px solid;
+    color: white;
+    position: absolute;
+    
+    width: 60px;
+    height: 30px;
+
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+}

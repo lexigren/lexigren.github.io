@@ -1,0 +1,25 @@
+.titlepage{
+    position: absolute;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)
+        ),
+        url("img/tpbk.jpg");
+    background-size: 100%;
+    text-align: center;
+}
+
+.titlelogo{
+    position: absolute;
+    background-image: url("img/logo.png");
+    background-size: 100%;
+}
+
+.titletext{
+    position: absolute;
+    color: white;
+    font-family: "Century Gothic", sans-serif;
+    top: 100px;
+    overflow: hidden;
+}

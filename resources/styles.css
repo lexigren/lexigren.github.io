@@ -1,0 +1,102 @@
+
+
+body {
+    color: #8f8f8f;
+    font: 12px Tahoma, sans-serif;
+    background-color: #000000;
+    margin: 0;
+
+    overflow: hidden;
+    size:100% 100%;
+}
+
+.button{
+    position: absolute;
+    background: #62d6ff;
+}
+.button:hover{
+    background: white;
+}
+.line{
+    margin-left: 5px;
+    margin-right: 5px;
+    background: white;
+    border-radius: 2px;
+}
+
+.menu{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 0px solid #62d6ff;
+    border-right: 0px solid transparent;
+    border-left: 0px solid #62d6ff;
+}
+.closeButton{
+    position: absolute;
+    color: white;
+}
+.closeButton:hover{
+    color: #000000;
+}
+
+.applicationButton{
+    text-align: center;
+    position: absolute;
+    border-radius: 2px;
+    border: 2px solid;
+    border-color: white;
+    line-height: 2.5;
+
+    color: white;
+    background-color:rgba(255,255,255,0.2);
+}
+.applicationButton:hover{
+    color: #000000;
+    background: white;
+}
+
+
+.menuNavigationButton{
+    position: absolute;
+    border-radius: 2px;
+    color: white;
+
+    line-height: 1.5;
+    text-indent: 0.5em;
+}
+
+.menuNavigationButton:hover{
+    color: #62d6ff;
+    background: white;
+}
+
+.closeButton, .applicationButton, .menuNavigationButton{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    cursor: default;
+}
+
+.pageHolder, .radioButtonHolder{
+    position: absolute;
+}
+
+.radioButton{
+    position: absolute;
+    border-radius: 50%;
+
+    border: 1px solid;
+    border-color: #62d6ff;
+}
+
+.splashScreen{
+    position: absolute;
+    background-color:rgba(0,0,0,0.8);
+    color:  #62d6ff;
+    text-align: center;
+}
